@@ -5,8 +5,6 @@ main = Flask(__name__)
 
 @main.route('/')
 def home():
-    # req2 = request.script_root
-    # print(req2, "HERE")
     return render_template('index.html')
 
 
@@ -15,7 +13,10 @@ def redirect(url):
     path = request.path
     url = path[1:len(path)]
     file = f'{url}.html'
-    return render_template(file)
+    try:
+        return render_template(file)
+    except:
+        return render_template('index.html', msg="URL does not exist")
 
 
 if __name__ == '__main__':
