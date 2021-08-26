@@ -1,146 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-	 <title>iclanretail.com| iPad Series </title>
-	
-	<meta name="description" content="iclanretail.com is the best apple iPhone service center in  Bangalore. For all iPhone, Smartphones, Tablets and Laptops repairs across bangalore.">
-	
-	
-    <meta name="author" content="iclanretail.com Services, iclanretail.com Services bangalore, iPad Services, Mac Services, Apple Watch Services, iOS Services, OS X Services, watchOS Services">
-	
-	<meta name="google-site-verification" content="#" />
-	<link rel="shortcut icon" href="../static/images/favicon.jpg">
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../static/css/prettyPhoto.css" rel="stylesheet">
-    <link href="../static/css/price-range.css" rel="stylesheet">
-    <link href="../static/css/animate.css" rel="stylesheet">
-	<link href="../static/css/main.css" rel="stylesheet">
-	<link href="../static/css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="../static/js/html5shiv.js"></script>
-    <script src="../static/js/respond.min.js"></script>
-    <![endif]-->       
-     
-</head><!--/head-->
+{% extends "base.html" %}
+{% block content %}
+    {% include 'nav.html' %}
 
-<body>
-	 <header id="header">
-	
-		 <div class="header_top"><!--header_top-->
-			 <div class="container">
-				<div class="row">
-				 <div class="col-lg-3">
-					<a href="index.html"><img src="../static/images/iclan-b2b-logo.png" style="padding-top:3px;" class="img-responsive" alt="" /> </a>
-					</div>
-					 
-					<div class="col-lg-6">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="mainmenu pull-left">
-                           <ul class="nav navbar-nav collapse navbar-collapse">
-							   
-								<li class="active"><a href="index.html">&nbsp; Home</a>  </li> 
-								<li><a href="about.html">About Us</a>  </li> 
-								<!--<li><a href="services.html">Services</a>  </li> 
-								<li><a href="gallery.html">Gallery</a>  </li>  -->
-								</li><li><a href="b2b.html">Corporate Orders</a>  
-								<li><a href="applesolution.html">Contact Us</a>   </li>  
-								 						 
-								 
-							</ul> 
-						</div>
-					</div>
-					
-					<div class="col-sm-3">
-						<div class="social-icons pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href="https://www.facebook.com/Apple-Solutions-997351437019875/?skip_nax_wizard=true"><i class="fa fa-facebook"></i></a></li>
-								
-								<li><a href="https://plus.google.com/u/0/111512208439544787236?hl=en"><i class="fa fa-google-plus"></i></a></li>	
-								
-								<li><a href="https://www.youtube.com/channel/UC6KFMkwMvJdWZQjUE7xnorg"><i class="fa fa-youtube"></i></a></li>
-								 
-								
-							</ul>
-						</div>
-					</div>
-					 
-				</div>
-			</div>
-		</div> 
-		
-		 
-		<div class="header-bottom"><!--header-bottom-->
-			<div class="container">
-				
-				
-			<div class="ac-familybrowser-wrapper  animated fadeInDown">
-				<ul class="ac-familybrowser-items">
-					<li class="ac-familybrowser-item macbook">
-						<a class="ac-familybrowser-link" href="macbook.html">
-							<figure class="ac-familybrowser-icon"></figure>
-							<span class="ac-familybrowser-label">MacBook Series</span>
-						</a>
-					</li>
-					
-					<li class="ac-familybrowser-item iphone-6s">
-						<a class="ac-familybrowser-link" href="iphone.html">
-							<figure class="ac-familybrowser-icon"></figure>
-							<span class="ac-familybrowser-label">iPhone Series</span>
-						</a>
-					</li>
-					
-					<li class="ac-familybrowser-item ipad-pro">
-						<a class="ac-familybrowser-link" href="ipad.html">
-							<figure class="ac-familybrowser-icon"></figure>
-							<span class="ac-familybrowser-label">&nbsp; iPad Series</span>
-						</a>
-					</li>
-					
-					
-					<li class="ac-familybrowser-item macbook-air">
-						<a class="ac-familybrowser-link" href="applewatch.html">
-							<figure class="ac-familybrowser-icon"></figure>
-							<span class="ac-familybrowser-label">Watch</span>
-						</a>
-					</li>
-					
-					<li class="ac-familybrowser-item macbook-pro">
-						<a class="ac-familybrowser-link" href="appletv.html">
-							<figure class="ac-familybrowser-icon"></figure>
-							<span class="ac-familybrowser-label">TV </span>
-						</a>
-					</li> 
-					<!-- <li class="ac-familybrowser-item macbook-pro">
-						<a class="ac-familybrowser-link" href="appletv.html">
-							<figure class="ac-familybrowser-icon"></figure>
-							<span class="ac-familybrowser-label">TV </span>
-						</a>
-					</li>  -->
-					
-					
-				</ul>
-				 
-			</div>
-			 	
-			</div>
-		</div><!--/header-bottom-->
-	
-		
-	</header><!--/header-->
-	 <br />
-	
-	 
+
+<div class="ac-familybrowser-wrapper animated fadeInDown" id="titleSlider">
+    <ul class="ac-familybrowser-items">
+        <li class="ac-familybrowser-item macbook">
+            <a class="ac-familybrowser-link" href="macbook">
+                <figure class="ac-familybrowser-icon"></figure>
+                <span class="ac-familybrowser-label">MacBook Series</span>
+            </a>
+        </li>
+
+        <li class="ac-familybrowser-item iphone-6s">
+            <a class="ac-familybrowser-link" href="iphone">
+                <figure class="ac-familybrowser-icon"></figure>
+                <span class="ac-familybrowser-label">iPhone Series</span>
+            </a>
+        </li>
+
+        <li class="ac-familybrowser-item ipad-pro">
+            <a class="ac-familybrowser-link" href="ipad">
+                <figure class="ac-familybrowser-icon"></figure>
+                <span class="ac-familybrowser-label">&nbsp; iPad Series</span>
+            </a>
+        </li>
+
+
+        <li class="ac-familybrowser-item macbook-air">
+            <a class="ac-familybrowser-link" href="applewatch">
+                <figure class="ac-familybrowser-icon"></figure>
+                <span class="ac-familybrowser-label">Watch</span>
+            </a>
+        </li>
+
+        <li class="ac-familybrowser-item macbook-pro">
+            <a class="ac-familybrowser-link" href="appletv">
+                <figure class="ac-familybrowser-icon"></figure>
+                <span class="ac-familybrowser-label">TV </span>
+            </a>
+        </li>
+
+
+    </ul>
+
+</div>
 	<section>
 	 
 	
@@ -239,30 +143,7 @@
 		</div>
 	 	
 	</section>
-	<div class="space10"></div>
-	<div class="space20"></div>
-	<div class="space30"></div>
-	 
-		<footer id="footer"><!--Footer-->
-	 
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-					<p class="pull-left">Copyright © 2020 <a href="index.html">iclanretail.com .</a> All rights reserved.</p>
-					
-					</div>
-					<div class="col-md-6">
-						<p class="pull-right">Designed by <span><a target="_blank" href="http://iclanweb.com/">iclanweb.com</a></span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</footer><!--/Footer-->
-	
 
-  
     <script src="../static/js/jquery.js"></script>
 	<script src="../static/js/price-range.js"></script>
     <script src="../static/js/jquery.scrollUp.min.js"></script>
@@ -272,5 +153,8 @@
 	<script src="../static/js/parallax.min.js"></script>
     <script src="../static/js/jquery.min.js"></script>
 	 <script src="../static/js/wow.min.js"></script>
-</body>
-</html>
+
+
+{% include 'footer-nav.html' %}
+
+{% endblock %}
